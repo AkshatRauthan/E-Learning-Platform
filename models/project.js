@@ -12,7 +12,7 @@ const projectSchema = new Schema({
         required : true
     },
     members : {
-        type : [Schema.Types.ObjectId],
+        type : Schema.Types.ObjectId,
         ref : 'User',
         required : true
     },
@@ -35,7 +35,7 @@ const projectSchema = new Schema({
         default : null,
     },
     skills : {
-        type : [Schema.Types.ObjectId],
+        type : Schema.Types.ObjectId,
         ref : 'Skill',
         required : true
     },

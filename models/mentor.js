@@ -8,7 +8,7 @@ const mentorSchema = new Schema({
         required : true
     },
     domain : {
-        type : [Schema.Types.ObjectId],
+        type : Schema.Types.ObjectId,
         ref : 'Skill',
         required : true
     },

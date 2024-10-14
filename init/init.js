@@ -13,16 +13,22 @@ async function main(){
 main().then(() => console.log(`Connection Successfull`))
 .catch((error) => console.log(error));
 
+// const skillsID = Skill.find({});
+// console.log(skillsID);
+
 async function initializeSkills(){
     await Skill.deleteMany({});
+    for (obj of skillData){
+
+    }
     await Skill.insertMany(skillData);
     console.log(`The Skills Collection Is Initialized With The Test Data`);
 };
 
-async function initializeBatches(){
-    await Batch.deleteMany({});
-    await Batch.insertMany(batchData);
-    console.log(`The Batches Collection Is Initialized With The Test Data`);
-};
+// async function initializeBatches(){
+//     await Batch.deleteMany({});
+//     await Batch.insertMany(batchData);
+//     console.log(`The Batches Collection Is Initialized With The Test Data`);
+// };
 
-initializeBatches();
+initializeSkills();
