@@ -15,6 +15,22 @@ const mentorSchema = new Schema({
     experience : {
         type : [String],
         required : true
+    },
+    geometry: {
+        type : {
+            type : String,
+            enum : [`Point`],
+            required : true
+        },
+        coordinates : {
+            type : [Number],
+            required : true
+        }
+    },
+    rating : {
+        type: Number,
+        max : 10,
+        min : 0
     }
 });
 
