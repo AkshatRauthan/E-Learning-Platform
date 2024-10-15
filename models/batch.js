@@ -16,7 +16,7 @@ const batchSchema = new Schema({
     duration : {
         type : String
     },
-    skills : {
+    skill : {
         type : Schema.Types.ObjectId,
         required : true,
         ref : 'Skill'
@@ -25,7 +25,7 @@ const batchSchema = new Schema({
         type : [String],
         required : true
     },
-    mentors : {
+    mentor : {
         type : Schema.Types.ObjectId,
         ref : 'Mentor',
         required: true

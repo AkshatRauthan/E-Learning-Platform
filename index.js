@@ -39,7 +39,7 @@ app.use(session(sessionOptions));
 app.use(flash());
 
 async function main(){
-    await mongoose.connect('mongodb://127.0.0.1:27017/wand-of-skills');
+    await mongoose.connect("mongodb+srv://akshatrauthan9433:d0pd7mh3x5msqoUp@cluster0.y2j6j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 }
 
 main().then(() => console.log(`Connection Successfull`))
